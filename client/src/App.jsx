@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import ProductsList from './components/ProductsList'
+import NavBar from './components/Navbar/Navbar'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <div className='app'>
-        <h1>React on Rails Back</h1>
-        <p>Find this application layout in client/src/App.jsx</p>
-        <ProductsList />
-      </div>
+      <NavBar />
+      <Outlet />
     </>
   )
 }
