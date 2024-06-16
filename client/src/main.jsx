@@ -5,6 +5,8 @@ import App from './App.jsx'
 import './index.css'
 import ErrorPage from './pages/ErrorPage.jsx';
 import HomePage from './pages/HomePage.jsx';
+import ProductDetails from './components/Products/ProductDetail.jsx';
+import ProductsList from './components/Products/ProductsList.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/catalog",
-        element: <h1>Catalog Page</h1>,
+        element: <ProductsList />,
+      },
+      {
+        path: "/catalog/:itemId",
+        element: <ProductDetails />,
       },
       {
         path: "/cart",
