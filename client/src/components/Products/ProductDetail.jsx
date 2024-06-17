@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Button, Container, MenuItem, TextField, Typography, CircularProgress } from "@mui/material";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { getProductById } from "../../services/api";
@@ -45,6 +45,7 @@ function ProductDetails() {
             <div style={styles.infoContainer}>
               <span style={styles.brandTag}>Brand: {product.brand}</span>
               <span style={styles.sizeTag}>Size: {product.size}</span>
+              <span style={styles.brandTag}>Material: {product.material}</span>
               <Typography variant="h2" style={styles.title}>{product.product_name}</Typography>
               <Typography variant="body1" style={styles.description}>{product.description}</Typography>
 
