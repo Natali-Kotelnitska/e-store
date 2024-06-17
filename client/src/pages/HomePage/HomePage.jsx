@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Fade, Container, Card, Box, Button, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { getAllProducts } from "../../services/api";
 import Styles from "./Homepage.styles";
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/Hero";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -73,11 +73,6 @@ const HomePage = () => {
         </Box>
       )}
     </Container>
-    // <div>
-    //   <h1>React on Rails Home Page</h1>
-    //   <p>Find this application layout in client/src/App.jsx</p>
-    //   <ProductsList />
-    // </div>
   )
 }
 

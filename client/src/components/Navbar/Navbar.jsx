@@ -4,6 +4,7 @@ import { AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Ty
 import MenuIcon from '@mui/icons-material/Menu';
 import HiveIcon from '@mui/icons-material/Hive';
 import { hiveIconSx, logoSx, menuSx, toolbarSx, buttonSx, boxMobileSx, boxDesktopSx } from "./NavbarStyles";
+import Logo from "../Logo";
 
 
 function NavBar() {
@@ -38,7 +39,7 @@ function NavBar() {
     <AppBar>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={toolbarSx}>
-          <p>Logo</p>
+          <Logo />
           <Box sx={boxMobileSx}>
             <IconButton
               size="large"
