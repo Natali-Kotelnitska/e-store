@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Progress
 
-Things you may want to cover:
+### Backend Features
+- [x] Rails API setup
+- [x] Product model creation
+- [x] Database seeding with Faker
+- [ ] Implement search functionality
+- [ ] User authentication and authorization
+- [ ] ...more tasks to come
 
-* Ruby version
+### Frontend Features
+- [x] React (Vite) setup with Axios and React Router v6
+- [x] Footer, Navbar
+- [x] Homepage with the products list
+- [x] Product show page
+- [ ] Integrate search component
+- [ ] Filtering the products
+- [ ] Design and implement Cart feature
+- [ ] User account creation and profile management
+- [ ] ...additional features in planning
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
