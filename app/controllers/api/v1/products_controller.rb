@@ -3,13 +3,19 @@ class Api::V1::ProductsController < ApplicationController
 
   # GET /products
   def index
-    @products = Product.all
+    # Simulate a delay
+    sleep 1
 
+    @products = Product.all
+                       .filter_by_brand(params[:brand])
+                       .filter_by_size(params[:size])
+                       .filter_by_material(params[:material])
     render json: @products
   end
 
   # GET /products/1
   def show
+
     render json: @product
   end
 
