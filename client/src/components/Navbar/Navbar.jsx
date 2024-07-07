@@ -5,6 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HiveIcon from '@mui/icons-material/Hive';
 import { hiveIconSx, logoSx, menuSx, toolbarSx, buttonSx, boxMobileSx, boxDesktopSx } from "./NavbarStyles";
 import Logo from "../Logo";
+import SearchBar from "../SearchBar/SearchBar";
 
 
 function NavBar() {
@@ -28,7 +29,6 @@ function NavBar() {
     setAnchorElNav(null);
   };
 
-  //  Generates the style object for the Button component based on the current path and index of the current page in the pages array.
   const getActiveBtn = (path, index) => ({
     ...buttonSx,
     backgroundColor: path === window.location.pathname ? 'rgba(255, 255, 255, 0.2)' : 'transparent', // Highlight button if it matches the current path
@@ -36,7 +36,7 @@ function NavBar() {
   });
 
   return (
-    <AppBar>
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={toolbarSx}>
           <Logo />
@@ -98,6 +98,9 @@ function NavBar() {
               </Button>
             ))}
           </Box>
+
+          {location.pathname === '/catalog' && <SearchBar />}
+
         </Toolbar>
       </Container>
     </AppBar>
